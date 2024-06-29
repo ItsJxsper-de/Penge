@@ -8,10 +8,11 @@
     <artifactId>Penge</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-    
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>penge-api</module>
+        <module>penge-1.20.1</module>
+    </modules>
+
 </project>
