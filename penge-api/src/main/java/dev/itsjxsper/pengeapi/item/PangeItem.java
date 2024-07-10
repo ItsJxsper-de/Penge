@@ -14,9 +14,15 @@ public class PangeItem {
     }
 
     public static ItemStack getPange(int value) {
-        ItemStack item = new ItemStack(Material.EMERALD);
-        ItemMeta meta = item.getItemMeta();
+        ItemStack item = null;
+        if (value < 1000) {
+            item = new ItemStack(Material.EMERALD);
+        } else if (value > 1000) {
+            item = new ItemStack(Material.EMERALD_BLOCK);
+        }
 
+        assert item != null;
+        ItemMeta meta = item.getItemMeta();
         meta.getPersistentDataContainer().set(key, PersistentDataType.INTEGER, value);
         item.setItemMeta(meta);
         return item;

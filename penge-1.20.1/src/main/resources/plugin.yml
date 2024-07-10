@@ -1,0 +1,4 @@
+name: penge-1.20.1
+version: '${project.version}'
+main: dev.itsjxsper.penge1.Penge_1
+api-version: '1.20'
